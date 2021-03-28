@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cmd{
+    margin: 150px auto 15px;
+    max-width: 670px;
+    height: 345px;
+    border: 2px solid #050505;
+    padding: 10px;
+    background-color: black;
+    border-radius: 9px;
+    box-shadow: rgb(17 15 80) 0px 2px 8px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.top-cmd{
+    color: rgb(0, 158, 0);
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    align-items: flex-end;
+    padding: 5px;
+    margin: 10px auto 10px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.itens{
+    float: right; 
+    margin-top: -22px;
+    cursor: pointer;
+}
+
+.arrow{
+    color: rgb(0, 158, 0);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.border-cmd{
+    margin-top: -28px;
+    margin-left: 30px;
+    border-right: 2px solid rgb(0 158 0 / 78%);
+}
+
+.effect{
+    font-size: 25px;
+    animation: blinkcursor 700ms steps(40) infinite normal, typing 3s steps(40) 2s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 8.5em;
+    }
+}
+
+@keyframes blinkcursor {
+    from{
+        border-right-color: rgb(0 158 0 / 78%);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.footer-by{
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+div{
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+div.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.expand{
+    max-width: 970px;
+    height: 600px;
+}
+
+div.expand-not{
+    max-width: 670px;
+    height: 345px;
+}
+
+div.mini{
+    height: 41px;
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.color-type{
+    color: rgb(0, 158, 0);
+}
